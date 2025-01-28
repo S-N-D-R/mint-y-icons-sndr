@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+
+import os, sys
+
+if __name__ == '__main__':
+    print("hello")
+    if len(sys.argv) >= 2:
+        basedir = os.getcwd()
+        linknames = sys.argv[1:]
+        for linkname in linknames:
+            linkname = linkname + ".png"
+            for dirname, subdirs, filelist in os.walk("Mint-Apps-SNDR/apps/"):
+                for filename in filelist:
+                    if filename == linkname:
+                        print(filename)
+                        linkpath = os.path.join(dirname, linkname)
+                        if os.path.exists(linkpath):
+                            if os.path.islink(linkpath):
+                                #is link
+                                print("--> %s:" % dirname)
+                                os.chdir(dirname)
+                                print("    rm %s" % linkname)
+                                os.system("rm %s" % linkname)
+                                os.chdir(basedir)
+                            else:
+                                print(linkname + "is not a link.")
+    else:
+        print("Usage: %s [link names to delete]" % sys.argv[0])
