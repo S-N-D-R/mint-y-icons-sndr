@@ -1,3 +1,16 @@
+Disclaimer 
+=======
+This is a personal fork of the mint icons, with the following changes:
+- Updated the index.theme file to work with KDE.
+- Removed everything except app icons.
+- Changed the theme to inherit from Papirus Dark.
+- Removed some icons I don't want replaced.
+- Added links to icons that are not covered by the base repo (like Caprine)
+
+I did this because I like the Mint app icons, but want the rest of the system to use Papirus icons.
+This is for personal use, and not guaranteed to work on anyone else's setup.
+
+Original readme content follows:
 
 Credits
 =======
