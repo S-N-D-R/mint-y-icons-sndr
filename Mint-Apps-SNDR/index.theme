@@ -3,7 +3,7 @@ Name=Mint-Apps-SNDR
 Inherits=Papirus-Dark
 Comment=Mint App icons for KDE
 
-Directories=apps/16,apps/16@2x,apps/22,apps/22@2x,apps/24,apps/24@2x,apps/32,apps/32@2x,apps/48,apps/48@2x,apps/64,apps/64@2x,apps/96,apps/96@2x,apps/256,apps/256@2x
+Directories=apps/16,apps/16@2x,apps/22,apps/22@2x,apps/24,apps/24@2x,apps/32,apps/32@2x,apps/48,apps/48@2x,apps/64,apps/64@2x,apps/96,apps/96@2x,apps/256,apps/256@2x,panel/16x16,panel/16x16@2x,panel/22x22,panel/22x22@2x,panel/24x24,panel/24x24@2x,panel/32x32
 
 [apps/16]
 Size=16
@@ -91,4 +91,41 @@ Type=Fixed
 Size=256
 Scale=2
 Context=Applications
+Type=Fixed
+
+[panel/16x16]
+Context=Status
+Size=16
+Type=Fixed
+
+[panel/16x16@2x]
+Context=Status
+Size=16
+Scale=2
+Type=Fixed
+
+[panel/22x22]
+Context=Status
+Size=22
+Type=Fixed
+
+[panel/22x22@2x]
+Context=Status
+Size=22
+Scale=2
+Type=Fixed
+
+[panel/24x24]
+Context=Status
+Size=24
+Type=Fixed
+
+[panel/24x24@2x]
+Context=Status
+Size=24
+Scale=2
+Type=Fixed
+[panel/32x32]
+Context=Status
+Size=32
 Type=Fixed
